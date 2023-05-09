@@ -793,17 +793,14 @@ td {
 @media only screen and (max-width: 650px) {
 
 
-    /* media query for navbar */
-
-    header .navbar {
-        top: 47px;
+    header {
+        padding: 0 10px;
     }
-
 
     /* media query for land page */
 
-    header .logo {
-        padding-bottom: 0;
+    header .navbar {
+        top: 42px;
     }
 
     .land-page h2 {
@@ -865,9 +862,8 @@ td {
     /* media query for table card */
 
     .table-card:hover {
-        transform: scale(1.05);
+        transform: scale(1.02);
     }
-
     
     /* media query for footer */
 
