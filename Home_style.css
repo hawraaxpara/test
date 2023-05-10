@@ -180,19 +180,27 @@ section {
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
-    height: 100svh;
 }
 
 .land-page .content {
     flex-direction: column;
 }
 
+
 /* Ghost Text Effect */
 
+.land-page {
+    position: relative;
+}
+
 .land-page h2 {
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
     text-align: center;
     color: var(--main-color);
-    margin-top: 14.8vh;
 }
 
 .land-page h2 span {
@@ -255,19 +263,22 @@ section {
 
 
 .main-btn {
+    position: absolute;
+    top: 58.5vh;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center;
-    margin-top: 13.6vh;
 }
 
 .main-btn a {
-    position: relative;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
+    width: 300px;
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: var(--main-color);
-    width: 300px;
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
     backdrop-filter: blur(1px);
     box-shadow: 0 5px 10px rgba(3, 3, 3, 0.5);
@@ -560,7 +571,7 @@ section {
 /* My Morning Cards */
 
 .my-morning {
-    background: linear-gradient(135deg, #06EFFEff, #023e8a);
+    background: linear-gradient(135deg, #06EFFEff, #005bd1);
 }
 
 .table-card {
@@ -577,7 +588,7 @@ section {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     padding: 20px;
     margin: 50px;
-    transition: .7s cubic-bezier(0.45, -0.49, 0.39, 2.13);
+    transition: .5s cubic-bezier(0.45, -0.49, 0.39, 2.13);
 }
 
 .table-card:hover {
@@ -648,6 +659,13 @@ td {
 
 .footer a:hover {
     color: #3f8bf0;
+}
+
+.footer span {
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #99FFFF;
 }
 
 
@@ -729,12 +747,8 @@ td {
 
     /* media query for land page */
 
-    .land-page {
-    background-attachment: scroll;
-    }
-
     .land-page h2 {
-        margin-top: 16vh;
+        top: 31vh;
     }
 
     .land-page h2 span {
@@ -742,13 +756,13 @@ td {
     }
 
     .main-btn {
-        margin-top: 13.5vh;
+        top: 58vh;
     }
     
     .main-btn a {
-        width: 280px;
+        width: 260px;
     }
-    
+
     .main-btn a::before {
         transform: skewX(135deg) translateX(-315px);
     }
@@ -757,15 +771,151 @@ td {
         transform: skewX(135deg) translateX(33px);
     }
 
+}
 
-    /* media query for gallery card */
+
+/* 2nd media query */
+
+@media only screen and (max-width: 650px) {
+
+
+    /* media query for navbar */
+
+    header .navbar {
+        top: 47px;
+    }
+
+
+    /* media query for land page */
+
+    header .logo {
+        margin-bottom: 0;
+    }
+
+    .land-page h2 {
+        top: 33vh;
+    }
+
+    .land-page h2 span {
+        font-size: 3.8em;
+    }
+
+    .main-btn {
+        top: 58vh;
+    }
+    
+    .main-btn a {
+        width: 250px;
+        font-size: 1.1em;
+        padding: 15px 0;
+    }
+    
+    .main-btn a::before {
+        transform: skewX(135deg) translateX(-280px);
+    }
+    
+    .main-btn a:hover::before {
+        transform: skewX(135deg) translateX(25px);
+    }
+
+}
+
+
+/* 3nd media query */
+
+@media only screen and (max-width: 450px) {
+
+
+    /* media query for land page */
+    
+    .land-page {
+        background-attachment: scroll;
+    }
+
+    .land-page h2 {
+        top: 37vh;
+        width: 400px;
+    }
+
+    .land-page h2 span {
+        font-size: 3.5em;
+    }
+
+    
+    /* Ghost Text Effect */
+
+    .land-page h2 span {
+        transition: 0.7s;
+    }
+
+    .land-page h2 span:nth-child(10n +1) {
+        transition-delay: 0s;
+    }
+
+    .land-page h2 span:nth-child(10n +2) {
+        transition-delay: 0.05s;
+    }
+
+    .land-page h2 span:nth-child(10n +3) {
+        transition-delay: 0.1s;
+    }
+
+    .land-page h2 span:nth-child(10n +4) {
+        transition-delay: 0.15s;
+    }
+
+    .land-page h2 span:nth-child(10n +5) {
+        transition-delay: 0.2s;
+    }
+
+    .land-page h2 span:nth-child(10n +6) {
+        transition-delay: 0.25s;
+    }
+
+    .land-page h2 span:nth-child(10n +7) {
+        transition-delay: 0.3s;
+    }
+
+    .land-page h2 span:nth-child(10n +8) {
+        transition-delay: 0.35s;
+    }
+
+    .land-page h2 span:nth-child(10n +9) {
+        transition-delay: 0.4s;
+    }
+
+    .land-page h2 span:nth-child(10n +10) {
+        transition-delay: 0.45s;
+    }
+
+    /* End Here */
+
+
+    .main-btn a:hover {
+        transform: none;
+        box-shadow: 0 5px 10px rgba(3, 3, 3, 0.5);
+    } 
+    
+    .main-btn a:hover::before {
+        transform: skewX(135deg) translateX(-330px);
+    }    
+
+
+    /* media query for fact card */
+    
+    .fact-card {
+        transition: transform 0.7s;
+    }
+
+    
+    /* media query for gallery */
 
     .gallery {
         background-attachment: scroll;
     }
 
     .gallery-card:hover {
-        transform: scale(1);
+        transform: none;
     }
 
     .gallery-card:hover .card-info .btn a {
@@ -796,87 +946,28 @@ td {
         transition-delay: 0.3s;
     }
 
-}
-
-
-/* 2nd media query */
-
-@media only screen and (max-width: 650px) {
-
-
-    /* media query for navbar */
-
-    header .navbar {
-        top: 47px;
-    }
-
-
-    /* media query for land page */
-
-    header .logo {
-        margin-bottom: 0;
-    }
-
-    .land-page h2 {
-        margin-top: 20vh;
-    }
-
-    .land-page h2 span {
-        font-size: 3.8em;
-    }
-
-    .main-btn {
-        margin-top: 12.1vh;
-    }
-    
-    .main-btn a {
-        width: 250px;
-        font-size: 1.1em;
-        padding: 15px 0;
-    }
-    
-    .main-btn a::before {
-        transform: skewX(135deg) translateX(-280px);
-    }
-    
-    .main-btn a:hover::before {
-        transform: skewX(135deg) translateX(25px);
-    }
-
-}
-
-
-/* 3nd media query */
-
-@media only screen and (max-width: 450px) {
-
-
-    /* media query for land page */
-
-    .land-page h2 {
-        margin-top: 20vh;
-    }
-
-    .land-page h2 span {
-        font-size: 3.3em;
-    }
-
-    .main-btn {
-        margin-top: 13.7vh;        
-    }
-
 
     /* media query for table card */
 
+    .table-card {
+        transition: .3s cubic-bezier(0.45, -0.49, 0.39, 2.13);
+    }
+    
     .table-card:hover {
-        transform: scale(1.05);
+        transform: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .table-card:focus {
+        transform: scale(1.03);
+        box-shadow: 5px 5px 10px rgba(1, 1, 1, 0.5);
     }
 
     
     /* media query for footer */
 
     .footer {
-        padding: 15px 10px;
+        padding: 15px 5px;
     }
     
     .footer p {
