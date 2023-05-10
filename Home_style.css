@@ -195,7 +195,6 @@ section {
     top: 25vh;
     left: 50%;
     transform: translateX(-50%);
-    width: 600px;
     text-align: center;
     color: var(--main-color);
 }
@@ -286,12 +285,8 @@ section {
     transition: 0.5s ease;
 }
 
-.main-btn a:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 10px 20px rgba(3, 0, 0, .7);
-} 
-
-.main-btn a:hover {
+.main-btn a:hover, 
+.main-btn a:focus {
     transform: scale(1.05);
     box-shadow: 0px 10px 20px rgba(3, 0, 0, .7);
 }
@@ -307,7 +302,8 @@ section {
     transition: 0.3s;
 }
 
-.main-btn a:hover::before {
+.main-btn a:hover::before,
+.main-btn a:focus::before {
     transform: skewX(135deg) translateX(32px);
     transition: 0.3s;
 }
