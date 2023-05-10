@@ -175,11 +175,15 @@ section {
 /* Land-Page */
 
 .land-page {
-    background: url(images/Background-02.jpg) no-repeat;
+    background: url(https://i.imgur.com/2UiDmT1.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
+<<<<<<< HEAD
+=======
+    position: relative;
+>>>>>>> 435b62464f79fde7ca0078f5c21019c5497632fc
 }
 
 .land-page .content {
@@ -195,10 +199,16 @@ section {
 
 .land-page h2 {
     position: absolute;
+<<<<<<< HEAD
     top: 30vh;
     left: 50%;
     transform: translateX(-50%);
     width: 600px;
+=======
+    top: 25vh;
+    left: 50%;
+    transform: translateX(-50%);
+>>>>>>> 435b62464f79fde7ca0078f5c21019c5497632fc
     text-align: center;
     color: var(--main-color);
 }
@@ -264,10 +274,17 @@ section {
 
 .main-btn {
     position: absolute;
+<<<<<<< HEAD
     top: 58.5vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+=======
+    top: 60vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+>>>>>>> 435b62464f79fde7ca0078f5c21019c5497632fc
 }
 
 .main-btn a {
@@ -275,7 +292,10 @@ section {
     justify-content: center;
     overflow: hidden;
     width: 300px;
+<<<<<<< HEAD
     text-align: center;
+=======
+>>>>>>> 435b62464f79fde7ca0078f5c21019c5497632fc
     font-size: 1.2em;
     font-weight: 600;
     color: var(--main-color);
@@ -290,10 +310,11 @@ section {
     transition: 0.5s ease;
 }
 
-.main-btn a:hover {
+.main-btn a:hover, 
+.main-btn a:focus {
     transform: scale(1.05);
     box-shadow: 0px 10px 20px rgba(3, 0, 0, .7);
-} 
+}
 
 .main-btn a::before {
     content: "";
@@ -306,11 +327,12 @@ section {
     transition: 0.3s;
 }
 
-.main-btn a:hover::before {
+.main-btn a:hover::before,
+.main-btn a:focus::before {
     transform: skewX(135deg) translateX(32px);
     transition: 0.3s;
 }
- 
+
 
 /* Lovely-Facts Cards */
 
@@ -405,7 +427,7 @@ section {
 /* Gallery Cards */
 
 .gallery {
-    background: url(images/wallpaper.jpg);
+    background: url(https://i.imgur.com/zWXuCps.jpg) no-repeat;
     background-size: cover;
     background-position: right;
     background-attachment: fixed;
@@ -747,17 +769,25 @@ td {
 
     /* media query for land page */
 
+<<<<<<< HEAD
     .land-page h2 {
         top: 31vh;
+=======
+    .land-page {
+    background-attachment: scroll;
+>>>>>>> 435b62464f79fde7ca0078f5c21019c5497632fc
     }
 
     .land-page h2 span {
         font-size: 4.5em;
     }
+<<<<<<< HEAD
 
     .main-btn {
         top: 58vh;
     }
+=======
+>>>>>>> 435b62464f79fde7ca0078f5c21019c5497632fc
     
     .main-btn a {
         width: 260px;
@@ -946,6 +976,7 @@ td {
         transition-delay: 0.3s;
     }
 
+<<<<<<< HEAD
 
     /* media query for table card */
 
@@ -953,6 +984,133 @@ td {
         transition: .3s cubic-bezier(0.45, -0.49, 0.39, 2.13);
     }
     
+=======
+}
+
+
+/* 2nd media query */
+
+@media only screen and (max-width: 650px) {
+
+
+    /* media query for navbar */
+
+    header .navbar {
+        top: 47px;
+    }
+
+
+    /* media query for land page */
+
+    header .logo {
+        margin-bottom: 0;
+    }
+
+    .land-page h2 span {
+        font-size: 3.8em;
+    }
+    
+    .main-btn a {
+        width: 250px;
+        font-size: 1.1em;
+        padding: 15px 0;
+    }
+    
+    .main-btn a::before {
+        transform: skewX(135deg) translateX(-280px);
+    }
+    
+    .main-btn a:hover::before {
+        transform: skewX(135deg) translateX(25px);
+    }
+
+}
+
+
+/* 3nd media query */
+
+@media only screen and (max-width: 450px) {
+
+
+    /* media query for land page */
+
+    .land-page h2 span {
+        font-size: 3.3em;
+        transition: 0.5s ease;
+    }
+
+
+    /* Ghost Effect */
+
+    .land-page h2 span:nth-child(10n +1) {
+        transition-delay: 0s;
+    }
+    
+    .land-page h2 span:nth-child(10n +2) {
+        transition-delay: 0.05s;
+    }
+    
+    .land-page h2 span:nth-child(10n +3) {
+        transition-delay: 0.1s;
+    }
+    
+    .land-page h2 span:nth-child(10n +4) {
+        transition-delay: 0.15s;
+    }
+    
+    .land-page h2 span:nth-child(10n +5) {
+        transition-delay: 0.2s;
+    }
+    
+    .land-page h2 span:nth-child(10n +6) {
+        transition-delay: 0.25s;
+    }
+    
+    .land-page h2 span:nth-child(10n +7) {
+        transition-delay: 0.3s;
+    }
+    
+    .land-page h2 span:nth-child(10n +8) {
+        transition-delay: 0.35s;
+    }
+    
+    .land-page h2 span:nth-child(10n +9) {
+        transition-delay: 0.4s;
+    }
+    
+    .land-page h2 span:nth-child(10n +10) {
+        transition-delay: 0.45s;
+    }
+    
+    /* End Here */
+
+
+    .main-btn {
+        transition: 0.3s ease;    
+    }
+
+
+    /* media query for table card */
+
+    .fact-card {
+        transition: transform 0.5s;
+    }
+
+
+    /* media query for gallery card */
+
+    .gallery-card .card-info .btn:hover a::before {
+        transition: 0.5s;
+    }
+
+
+    /* media query for table card */
+
+    .table-card {
+        transition: .3s cubic-bezier(0.45, -0.49, 0.39, 2.13);
+    }
+
+>>>>>>> 435b62464f79fde7ca0078f5c21019c5497632fc
     .table-card:hover {
         transform: none;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
