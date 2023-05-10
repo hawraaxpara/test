@@ -859,7 +859,54 @@ td {
 
     .land-page h2 span {
         font-size: 3.3em;
+        transition: 0.75s;
     }
+
+
+    /* Ghost Effect */
+
+    .land-page h2 span:nth-child(10n +1) {
+        transition-delay: 0s;
+    }
+    
+    .land-page h2 span:nth-child(10n +2) {
+        transition-delay: 0.05s;
+    }
+    
+    .land-page h2 span:nth-child(10n +3) {
+        transition-delay: 0.1s;
+    }
+    
+    .land-page h2 span:nth-child(10n +4) {
+        transition-delay: 0.15s;
+    }
+    
+    .land-page h2 span:nth-child(10n +5) {
+        transition-delay: 0.2s;
+    }
+    
+    .land-page h2 span:nth-child(10n +6) {
+        transition-delay: 0.25s;
+    }
+    
+    .land-page h2 span:nth-child(10n +7) {
+        transition-delay: 0.3s;
+    }
+    
+    .land-page h2 span:nth-child(10n +8) {
+        transition-delay: 0.35s;
+    }
+    
+    .land-page h2 span:nth-child(10n +9) {
+        transition-delay: 0.4s;
+    }
+    
+    .land-page h2 span:nth-child(10n +10) {
+        transition-delay: 0.45s;
+    }
+    
+    /* End Here */
+
 
     .main-btn {
         margin-top: 13.7vh;        
