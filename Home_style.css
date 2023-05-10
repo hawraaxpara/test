@@ -744,16 +744,8 @@ td {
     background-attachment: scroll;
     }
 
-    .land-page h2 {
-        margin-top: 16vh;
-    }
-
     .land-page h2 span {
         font-size: 4.5em;
-    }
-
-    .main-btn {
-        margin-top: 13.5vh;
     }
     
     .main-btn a {
@@ -828,16 +820,8 @@ td {
         margin-bottom: 0;
     }
 
-    .land-page h2 {
-        margin-top: 20vh;
-    }
-
     .land-page h2 span {
         font-size: 3.8em;
-    }
-
-    .main-btn {
-        margin-top: 12.1vh;
     }
     
     .main-btn a {
@@ -863,10 +847,6 @@ td {
 
 
     /* media query for land page */
-
-    .land-page h2 {
-        margin-top: 20vh;
-    }
 
     .land-page h2 span {
         font-size: 3.3em;
@@ -920,7 +900,6 @@ td {
 
 
     .main-btn {
-        margin-top: 13.7vh;
         transition: 0.3s ease;    
     }
 
