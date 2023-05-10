@@ -536,8 +536,8 @@ section {
     bottom: 0;
     height: 50%;
     width: 80%;
-    border-radius: 30px;
     filter: blur(5px);
+    border-radius: 30px;
 }
 
 .gallery-card .card-info .btn::after {
@@ -563,8 +563,8 @@ section {
     top: 0;
     height: 50%;
     width: 80%;
-    border-radius: 30px;
     filter: blur(5px);
+    border-radius: 30px;
 }
 
 
