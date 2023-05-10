@@ -195,6 +195,7 @@ section {
     top: 25vh;
     left: 50%;
     transform: translateX(-50%);
+    width: 600px;
     text-align: center;
     color: var(--main-color);
 }
