@@ -175,12 +175,11 @@ section {
 /* Land-Page */
 
 .land-page {
-    background: url(images/Background-02.jpg) no-repeat;
+    background: url(https://i.imgur.com/HBfTGYz.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
-    height: 100svh;
 }
 
 .land-page .content {
