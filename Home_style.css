@@ -180,18 +180,23 @@ section {
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
+    position: relative;
 }
 
 .land-page .content {
     flex-direction: column;
 }
 
+
 /* Ghost Text Effect */
 
 .land-page h2 {
+    position: absolute;
+    top: 25vh;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     color: var(--main-color);
-    margin-top: 14.8vh;
 }
 
 .land-page h2 span {
@@ -254,19 +259,21 @@ section {
 
 
 .main-btn {
-    display: flex;
-    justify-content: center;
-    margin-top: 13.6vh;
+    position: absolute;
+    top: 60vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
 .main-btn a {
-    position: relative;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
-    text-align: center;
+    width: 300px;
     font-size: 1.2em;
     font-weight: 600;
     color: var(--main-color);
-    width: 300px;
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
     backdrop-filter: blur(1px);
     box-shadow: 0 5px 10px rgba(3, 3, 3, 0.5);
@@ -283,6 +290,11 @@ section {
     box-shadow: 0px 10px 20px rgba(3, 0, 0, .7);
 } 
 
+.main-btn a:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(3, 0, 0, .7);
+}
+
 .main-btn a::before {
     content: "";
     position: absolute;
@@ -298,7 +310,7 @@ section {
     transform: skewX(135deg) translateX(32px);
     transition: 0.3s;
 }
- 
+
 
 /* Lovely-Facts Cards */
 
@@ -393,7 +405,7 @@ section {
 /* Gallery Cards */
 
 .gallery {
-    background: url(https://i.imgur.com/zWXuCps.jpg);
+    background: url(https://i.imgur.com/zWXuCps.jpg) no-repeat;
     background-size: cover;
     background-position: right;
     background-attachment: fixed;
