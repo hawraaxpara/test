@@ -859,7 +859,7 @@ td {
 
     .land-page h2 span {
         font-size: 3.3em;
-        transition: 0.75s;
+        transition: 0.5s ease;
     }
 
 
@@ -909,11 +909,30 @@ td {
 
 
     .main-btn {
-        margin-top: 13.7vh;        
+        margin-top: 13.7vh;
+        transition: 0.3s ease;    
     }
 
 
     /* media query for table card */
+
+    .fact-card {
+        transition: transform 0.5s;
+    }
+
+
+    /* media query for gallery card */
+
+    .gallery-card .card-info .btn:hover a::before {
+        transition: 0.5s;
+    }
+
+
+    /* media query for table card */
+
+    .table-card {
+        transition: .3s cubic-bezier(0.45, -0.49, 0.39, 2.13);
+    }
 
     .table-card:hover {
         transform: scale(1.05);
